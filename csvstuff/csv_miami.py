@@ -15,16 +15,6 @@ def GetCSV_dict(filename,column_names):
         return [[row[column] for column in column_names] for row in reader]
     return []
 
-# def condense(track_info):
-#     res = {}
-#     for row in track_info:
-#         #if the root dictionary doesn't contain work_id
-#         if not res.__contains__(row[0]):
-#             res[row[0]] = {}
-#         #if the first child dict doesn't
-#         if not res[row[0]][row[1]]:
-#             pass
-
 def condense(track_info):
     res = {}
 
