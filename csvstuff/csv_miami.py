@@ -54,7 +54,7 @@ def GetDirty():
     return GetCSV('./dirty.csv')
 
 def GetKeys():
-    return GetCSV('./keys.csv',cols=2)
+    return GetCSV('./keys.csv',cols=1)
 
 def WriteResult(filename,column_names,columns):
     print(len(column_names),len(columns))
